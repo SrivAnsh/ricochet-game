@@ -1,6 +1,8 @@
 extends Sprite2D
 
 var speed = 300.0
+func _ready() -> void:
+	texture = load("res://circle.png")
 
 func _process(delta):
 	# Find exactly where the mouse cursor is on the screen
