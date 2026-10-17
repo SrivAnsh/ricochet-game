@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="godot-ricochet-game"
-run/main_scene="uid://y5fg0otm0i2t"
+run/main_scene="uid://jy0u56ch44qr"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 

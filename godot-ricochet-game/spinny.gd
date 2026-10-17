@@ -16,12 +16,11 @@ var start_pos: Vector2
 func _ready():
 	start_pos = get_centre_left()
 	global_position = start_pos
-	can_sleep = false   # a sleeping body can ignore the launch
+	can_sleep = false 
 	
 func get_centre_left() -> Vector2:
 	var screen_size := get_viewport().get_visible_rect().size
 	var screen_point := Vector2(margin, screen_size.y / 2.0)
-	# Convert screen coords to world coords (handles a Camera2D if you have one)
 	return get_viewport().get_canvas_transform().affine_inverse() * screen_point
 
 func _process(delta):
